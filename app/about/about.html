@@ -1,0 +1,35 @@
+<div>
+    <h2>Name 1</h2>
+    Name {{message}}
+    <br>
+    <input #name>
+    <button (click)="showName(name.value)">Click me!</button>
+    <br>
+    <h2>Name 2</h2>
+    Name {{message2}}
+    <br>
+    <input #nume (keyup)="message2=nume.value">
+    <br>
+    <ul>
+        <li *ngFor = "#name1 of names">
+            {{name1}}
+        </li>
+    </ul>
+    <br>
+    <h2>Name 3</h2>
+    Name {{m}}
+    <br>
+    <input (keyup)="showN($event)">
+
+    <br>
+    <h2>Name 4</h2>
+    Name {{mm}}
+    <br>
+    <input [(ngModel)] = "mm">
+
+    <br>
+    <h2>Name 5</h2>
+    Name {{mma}}
+    <br>
+    <input bindon-ngModel = "mma">
+</div>

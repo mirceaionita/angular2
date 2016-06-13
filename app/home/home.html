@@ -1,0 +1,15 @@
+<ul>
+    <li *ngFor="#name of names">
+        {{name.name}}
+    </li>
+</ul>
+<h3>
+    {{currentDate | date:'yyyy-MM-dd'}}
+</h3>
+<br>
+<input [(ngModel)]="param1">
+<br>
+<input [(ngModel)]="param2">
+<br>
+Rezultat: {{param1}} * {{param2}} = {{param1 | multiplier : param2}}
+<br>
